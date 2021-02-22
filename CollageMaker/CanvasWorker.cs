@@ -16,7 +16,7 @@ namespace CollageMaker
             int incrementedHeight = 0;
             int targetPositionInList = 0;
 
-            for (int i = 0; i < listOfImages.Count; i++)
+            for (int i = 1; i < listOfImages.Count; i++)
             {
                 if (incrementedWidth + listOfImages[i].Width > 1920)
                 {
@@ -35,7 +35,7 @@ namespace CollageMaker
                     incrementedWidth += listOfImages[i].Width;
                 }
 
-                canvas.Save(@"OutputFolder\OutputImage.png"); //For debugging! Comment out or erase when not needed.
+                //canvas.Save(@"OutputFolder\OutputImage.png"); //For debugging! Comment out or erase when not needed.
             }
 
             return canvas;
