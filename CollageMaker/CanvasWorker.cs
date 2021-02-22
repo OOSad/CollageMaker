@@ -34,8 +34,6 @@ namespace CollageMaker
                     canvas.Mutate(operation => operation.DrawImage(listOfImages[i], new Point(incrementedWidth, incrementedHeight), 1f));
                     incrementedWidth += listOfImages[i].Width;
                 }
-
-                //canvas.Save(@"OutputFolder\OutputImage.png"); //For debugging! Comment out or erase when not needed.
             }
 
             return canvas;
